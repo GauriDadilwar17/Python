@@ -1,0 +1,8 @@
+import pandas as pd
+
+def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
+    df=pd.DataFrame(employees)
+    print(df.head(3))
+    return df.head(3)
+
+#always check the indentation.
