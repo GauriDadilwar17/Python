@@ -1,0 +1,10 @@
+import pandas as pd
+
+def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
+    df = pd.DataFrame(employees)
+
+    df['salary'] = df['salary'] * 2
+
+    return df
+
+#salary column is already given. the condition is to modify the salary by doubling it, means (*2).
