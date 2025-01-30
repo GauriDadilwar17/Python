@@ -1,0 +1,12 @@
+import pandas as pd
+
+def createBonusColumn(employees: pd.DataFrame) -> pd.DataFrame:
+    df=pd.DataFrame(employees)
+
+    df['bonus'] = df['salary']*2 
+
+    return df
+#in order to create third column as bonus, the logic is simple,
+# multiply the salary by 2. and return the df as we are dealing with the functions. 
+ # if it was normal statement then we can make use of print()
+    
